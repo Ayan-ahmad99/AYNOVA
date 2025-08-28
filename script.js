@@ -77,7 +77,7 @@ unlockBtn.addEventListener('click', () => {
 
 // Start free trial countdown when page loads
 window.onload = () => {
-  timerInterval = setInterval(updateTimer, 5000);
+  timerInterval = setInterval(updateTimer, 2000);
 };
 
 // Simulate payment confirmation after QR scan (e.g., 5 seconds for testing)
@@ -90,5 +90,6 @@ function simulateQRPayment() {
 
 // Call this function on page load or when modal shows
 simulateQRPayment();
+
 
 
