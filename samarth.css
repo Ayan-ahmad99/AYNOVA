@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: red;
+    text-align: center;
+}
+
+header {
+    background-color: red;
+    color: black;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.university {
+    border: 2px solid red;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Background images for each university */
+.dsmnru { background-image: url("universityimage/dsmnru.jpeg"); }
+.kmclu{ background-image: url("universityimage/kmclu.jpg");}
+.aktu { background-image: url("universityimage/AKTU.jpeg"); }
+.integral { background-image: url("universityimage/INTEGRAL.jpeg"); }
+.kgmu { background-image: url("universityimage/KGMU.jpg"); }
+.lkouniv { background-image: url("universityimage/LU.jpg"); }
+.bbd { background-image: url("universityimage/BBD.jpg"); }
+.amity { background-image: url("universityimage/AKTU.jpeg"); }
+
+.result-btn {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.result-btn:hover {
+    background-color: black;
+    color: red;
+    border: 1px solid red;
+}
