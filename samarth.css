@@ -35,14 +35,14 @@ h1 {
 }
 
 /* Background images for each university */
-.dsmnru { background-image: url("https://github.com/Ayan-ahmad99/AYNOVA/blob/main/dsmnru.jpeg?raw=true"); }
-.kmclu{ background-image: url("kmclu.jpg");}
-.aktu { background-image: url("AKTU.jpeg"); }
+.dsmnru { background-image: url("https://gyaanarth.com/wp-content/uploads/2022/05/2022-02-24.jpg"); }
+.kmclu{ background-image: url("https://cdn.universitykart.com/Content/upload/admin/zgsinf2b.5sn.jpg");}
+.aktu { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7FT0Or11bqm7Wx6ruAcqEI84-D57uqk4VYgPULzK0vs_bBdqoDmtyvNAZC2qw_Jldjc&usqp=CAU"); }
 .integral { background-image: url("INTEGRAL.jpeg"); }
-.kgmu { background-image: url("KGMU.jpg"); }
-.lkouniv { background-image: url("LU.jpg"); }
-.bbd { background-image: url("BBD.jpg"); }
-.amity { background-image: url("AKTU.jpeg"); }
+.kgmu { background-image: url("https://image-static.collegedunia.com/public/college_data/images/campusimage/14175121691.JPG"); }
+.lkouniv { background-image: url("https://media.assettype.com/knocksense%2F2023-01%2F3cf302f0-e1ee-4c03-83a5-acbe1f0968f0%2F6FEDD1BF_B320_463F_A783_B9B2C390893F.jpeg"); }
+.bbd { background-image: url("https://image-static.collegedunia.com/public/college_data/images/appImage/25923_BBDU_APP.jpg?h=260&w=360&mode=crop"); }
+.amity { background-image: url("https://www.amity.edu/lucknow/images/university.jpg"); }
 
 .result-btn {
     background-color: red;
@@ -60,5 +60,6 @@ h1 {
     color: red;
     border: 1px solid red;
 }
+
 
 
