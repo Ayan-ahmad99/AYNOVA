@@ -8,7 +8,6 @@ let paymentDetails = document.getElementById("paymentDetails");
 // Generate QR Code (Replace URL with your payment link)
 let paymentLink = "upi://pay?pa=example@upi&pn=MyWebsite&am=100&cu=INR";
 qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(paymentLink)}`;
-
 // Timer countdown
 let countdown = setInterval(() => {
   let min = Math.floor(timeLeft / 60);
