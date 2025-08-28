@@ -1,23 +1,72 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
     color: #fff;
     text-align: center;
 }
 
-.main-container, .subscription-container {
-    padding: 50px 20px;
+.subscription-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #ff4d4d;
+    font-size: 26px;
 }
 
 p {
-    margin: 10px 0;
-    font-size: 18px;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.qr-section {
+    margin: 20px 0;
+}
+
+.qr-image {
+    width: 200px;
+    margin: 10px auto;
+    display: block;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.payment-methods h2 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #ff4d4d;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.method-btn {
+    padding: 10px;
+    background: #2a2a2a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.method-btn:hover {
+    background: #ff4d4d;
+    transform: scale(1.05);
 }
 
 .btn {
@@ -35,12 +84,4 @@ p {
 .btn:hover {
     background: #e63b3b;
     transform: scale(1.05);
-}
-
-.qr-image {
-    width: 250px;
-    margin: 20px auto;
-    display: block;
-    border: 5px solid #fff;
-    border-radius: 10px;
 }
