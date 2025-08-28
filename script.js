@@ -64,7 +64,7 @@ function showPaymentModal() {
 }
 
 function unlockSite() {
-  paymentModal.style.display = 'flex';
+  paymentModal.style.display = 'none';
   document.body.classList.remove('locked');
   clearInterval(timerInterval);
 }
@@ -79,4 +79,16 @@ unlockBtn.addEventListener('click', () => {
 window.onload = () => {
   timerInterval = setInterval(updateTimer, 5000);
 };
+
+// Simulate payment confirmation after QR scan (e.g., 5 seconds for testing)
+function simulateQRPayment() {
+    setTimeout(() => {
+        unlockSite(); // Ye function modal hide karega aur page unlock karega
+        alert("Payment detected! Site unlocked.");
+    }, 5000); // 5000ms = 5 seconds, adjust as needed
+}
+
+// Call this function on page load or when modal shows
+simulateQRPayment();
+
 
