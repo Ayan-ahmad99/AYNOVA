@@ -8,13 +8,35 @@
 </head>
 <body>
     <div class="subscription-container">
-        <h1>Subscription Details</h1>
-        <p>Pay <strong>₹99</strong> to unlock premium features</p>
+        <h1>Unlock Premium Features</h1>
+        <p>Pay <strong>₹99</strong> to continue using the site</p>
         <p>Free trial available till <strong>30th Sept 2025</strong></p>
-        <img src="image.jpg" alt="QR Code" class="qr-image">
-        <p>Scan the QR code above to complete your payment</p>
+
+        <!-- QR Code Section -->
+        <div class="qr-section">
+            <img src="image.jpg" alt="QR Code" class="qr-image">
+            <p>Scan the QR code above to complete your payment</p>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="payment-methods">
+            <h2>Pay Using</h2>
+            <div class="methods-grid">
+                <button class="method-btn" onclick="window.open('image.jpg','_blank')">PhonePe</button>
+                <button class="method-btn" onclick="window.open('','')">Google Pay</button>
+                <button class="method-btn" onclick="window.open('','')">Paytm</button>
+                <button class="method-btn" onclick="window.open('','')">Amazon Pay</button>
+                <button class="method-btn" onclick="window.open('','')">UPI</button>
+                <button class="method-btn" onclick="window.open('','')">Debit Card</button>
+                <button class="method-btn" onclick="window.open('','')">Credit Card</button>
+                <button class="method-btn" onclick="window.open('','')">Net Banking</button>
+                <button class="method-btn" onclick="window.open('','')">Other</button>
+            </div>
+        </div>
+        <br>
+        <input type="file" placeholder="choose file" style="margin-left: 80px;"><br>
+        <h4><input type="submit" style="width: 150px; height: 40px; border-radius: 6px; border: solid 2px crimson; color: crimson;"></h4>
         <a href="index.html" class="btn">Back to Home</a>
     </div>
 </body>
 </html>
-
