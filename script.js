@@ -64,7 +64,7 @@ function showPaymentModal() {
 }
 
 function unlockSite() {
-  paymentModal.style.display = 'none';
+  paymentModal.style.display = 'flex';
   document.body.classList.remove('locked');
   clearInterval(timerInterval);
 }
@@ -77,5 +77,6 @@ unlockBtn.addEventListener('click', () => {
 
 // Start free trial countdown when page loads
 window.onload = () => {
-  timerInterval = setInterval(updateTimer, 1000);
+  timerInterval = setInterval(updateTimer, 5000);
 };
+
