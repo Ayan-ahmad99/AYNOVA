@@ -77,3 +77,19 @@ function unlockSite() {
 
 // "I've Paid" button par unlock kare
 unlockBtn.addEventListener('click', unlockSite);
+
+
+    const settingsIcon = document.getElementById("settingsIcon");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    settingsIcon.addEventListener("click", () => {
+        dropdownMenu.style.display = 
+            dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener("click", (e) => {
+        if (!settingsIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.style.display = "none";
+        }
+    });
