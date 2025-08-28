@@ -12,6 +12,7 @@ qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${en
 let countdown = setInterval(() => {
   let min = Math.floor(timeLeft / 60);
   let sec = timeLeft % 60;
+  
   timer.innerText = `Free Trial: ${min}:${sec < 10 ? "0" + sec : sec}`;
 
   if (timeLeft <= 0) {
