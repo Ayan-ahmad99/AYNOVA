@@ -140,3 +140,47 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+
+.settings-container {
+    position: relative;
+    display: inline-block;
+}
+
+#settingsIcon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: crimson;
+    padding: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: black;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: crimson;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: crimson;
+    color: black;
+}
+
