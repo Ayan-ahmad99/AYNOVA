@@ -35,14 +35,14 @@ h1 {
 }
 
 /* Background images for each university */
-.dsmnru { background-image: url("universityimage/dsmnru.jpeg"); }
-.kmclu{ background-image: url("universityimage/kmclu.jpg");}
-.aktu { background-image: url("universityimage/AKTU.jpeg"); }
-.integral { background-image: url("universityimage/INTEGRAL.jpeg"); }
-.kgmu { background-image: url("universityimage/KGMU.jpg"); }
-.lkouniv { background-image: url("universityimage/LU.jpg"); }
-.bbd { background-image: url("universityimage/BBD.jpg"); }
-.amity { background-image: url("universityimage/AKTU.jpeg"); }
+.dsmnru { background-image: url("dsmnru.jpeg"); }
+.kmclu{ background-image: url("kmclu.jpg");}
+.aktu { background-image: url("AKTU.jpeg"); }
+.integral { background-image: url("INTEGRAL.jpeg"); }
+.kgmu { background-image: url("KGMU.jpg"); }
+.lkouniv { background-image: url("LU.jpg"); }
+.bbd { background-image: url("BBD.jpg"); }
+.amity { background-image: url("AKTU.jpeg"); }
 
 .result-btn {
     background-color: red;
@@ -60,3 +60,4 @@ h1 {
     color: red;
     border: 1px solid red;
 }
+
