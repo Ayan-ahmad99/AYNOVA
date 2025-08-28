@@ -35,7 +35,7 @@ h1 {
 }
 
 /* Background images for each university */
-.dsmnru { background-image: url("dsmnru.jpeg"); }
+.dsmnru { background-image: url("https://github.com/Ayan-ahmad99/AYNOVA/blob/main/dsmnru.jpeg?raw=true"); }
 .kmclu{ background-image: url("kmclu.jpg");}
 .aktu { background-image: url("AKTU.jpeg"); }
 .integral { background-image: url("INTEGRAL.jpeg"); }
@@ -60,4 +60,5 @@ h1 {
     color: red;
     border: 1px solid red;
 }
+
 
