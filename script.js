@@ -38,27 +38,27 @@
       audio.play().catch(err => console.log("Autoplay blocked:", err));
     });
 
-
-
 let freeTime = 2 * 60; // 2 minutes free trial
 const timerDisplay = document.getElementById('timer');
 const paymentModal = document.getElementById('payment-modal');
 const unlockBtn = document.getElementById('unlock-btn');
+let timerInterval;
 
 function updateTimer() {
   let minutes = Math.floor(freeTime / 60);
   let seconds = freeTime % 60;
   timerDisplay.textContent = `${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
-  
+
   if (freeTime <= 0) {
     clearInterval(timerInterval);
-    lockSite();
+    showPaymentModal();
   } else {
     freeTime--;
   }
 }
 
-function lockSite() {
+function showPaymentModal() {
+  paymentModal.style.display = 'flex';
   document.body.classList.add('locked');
   alert("Free trial ended! Please pay to continue.");
 }
@@ -75,13 +75,7 @@ unlockBtn.addEventListener('click', () => {
   unlockSite();
 });
 
+// Start free trial countdown when page loads
 window.onload = () => {
-  paymentModal.style.display = 'flex';
-  document.body.classList.add('locked'); // Lock content until payment or trial
   timerInterval = setInterval(updateTimer, 1000);
 };
-
-
-
-
-
