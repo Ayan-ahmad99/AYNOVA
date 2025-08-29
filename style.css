@@ -1,24 +1,186 @@
-@media (max-width: 420px) {
-  .hdr {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-    padding: 10px;
-  }
-  .nav_bar {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .nav_bar a {
-    font-size: 14px;
-    padding: 5px 8px;
-  }
-  .search input {
+/* style.css - header, body, basic layout */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
     width: 100%;
-    margin-top: 5px;
-  }
-  .details {
-    padding: 10px;
-    font-size: 14px;
-  }
+    min-height: 100vh;
+    /* full-bleed background kept */
+    background: url('https://i.pinimg.com/736x/76/ac/81/76ac815b444b02dc3cbc17f0bb47a5c5.jpg') no-repeat center/cover fixed;
+    color: #fff;
 }
+
+/* Header (keeps full width; inner content centered by max-width rules below) */
+.hdr {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* header above slider/hero */
+    background-color: rgba(220, 20, 60, 0.95);
+    /* backdrop-filter: blur(0.2px); */
+}
+
+/* Center page content inside a max-width so navbar items don't overflow */
+.hdr,
+.slider,
+.hero,
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    display: block;
+    mix-blend-mode:color-burn; 
+}
+
+/* Search */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search input {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    min-width: 180px;
+}
+
+.searchb {
+    padding: 6px 10px;
+    border: none;
+    color: crimson;
+    border-radius: 6px;
+    background: #141414;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+.searchb:hover { background: orange; transform: translateY(-1px); }
+
+/* Navigation Bar - flex:1 so it uses remaining space and centers links */
+.nav_bar {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;   /* Always row */
+    flex-wrap: nowrap;     /* Prevent wrap */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background 0.18s, color 0.18s;
+}
+
+.nav_bar a:hover {
+    background: rgba(255,255,255,0.06);
+    color: #ffeb80;
+}
+
+/* Settings icon container alignment */
+.set { display: flex; align-items: center; }
+.set img { border-radius: 50%; cursor: pointer; transition: transform .3s; }
+.set img:hover { transform: rotate(90deg); }
+
+
+/* Details Section */
+.details {
+    background: crimson;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.details h2 {
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: crimson;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.settings-container {
+    position: relative;
+    display: inline-block;
+}
+
+#settingsIcon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: crimson;
+    padding: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: black;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: crimson;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: crimson;
+    color: black;
+}
+
