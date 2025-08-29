@@ -1,0 +1,74 @@
+/* ============================
+   Global Responsive Overrides
+   ============================ */
+
+/* Large screens (Default: already fine from your code) */
+
+/* ----------------------------
+   Max width 1200px (Laptops)
+----------------------------- */
+@media (max-width: 1200px) {
+  .hero { height: 55vh; }
+  .hero-title { font-size: 34px; }
+  .container { gap: 15px; }
+}
+
+/* ----------------------------
+   Max width 992px (Small laptops / tablets landscape)
+----------------------------- */
+@media (max-width: 992px) {
+  .nav_bar { gap: 12px; font-size: 15px; }
+  .box, .box1, .box2, .box3, .box4, .box5 {
+    width: 48%; min-width: 200px; height: 32vh;
+  }
+  .hero { height: 50vh; padding: 18px; }
+  .hero-title { font-size: 28px; }
+}
+
+/* ----------------------------
+   Max width 768px (Tablets / Large Phones)
+----------------------------- */
+@media (max-width: 768px) {
+  header h1 { font-size: 20px; }
+  .search input { min-width: 120px; }
+  .container { padding: 0 10px; }
+  .hero { height: 45vh; padding: 12px; }
+  .hero-title { font-size: 22px; }
+  .hero-desc { font-size: 14px; }
+  .box, .box1, .box2, .box3, .box4, .box5 {
+    width: 100%; height: auto; min-height: 200px;
+  }
+}
+
+/* ----------------------------
+   Max width 576px (Mobile Portrait)
+----------------------------- */
+@media (max-width: 576px) {
+  .hdr { flex-wrap: wrap; height: auto; padding: 8px; }
+  .nav_bar { flex-wrap: nowrap; overflow-x: auto; gap: 10px; }
+  .search input { width: 100px; padding: 4px; }
+  .hero { height: 40vh; padding: 10px; }
+  .hero-title { font-size: 18px; }
+  .box, .box1, .box2, .box3, .box4, .box5 {
+    width: 100%; margin-bottom: 15px;
+  }
+  .subscription-container, .university {
+    padding: 15px; font-size: 14px;
+  }
+  .result-btn, .method-btn {
+    width: 100%; margin-top: 10px; padding: 10px;
+  }
+}
+
+/* ----------------------------
+   Max width 420px (Small Phones)
+----------------------------- */
+@media (max-width: 420px) {
+  h1 { font-size: 18px; }
+  .hero-title { font-size: 16px; }
+  .hero-desc { font-size: 12px; }
+  .logo img { width: 80px; height: auto; }
+  #aynova-text span { font-size: 16vw; }
+  #payment-modal { padding: 20px; font-size: 14px; }
+  #qr-code { width: 150px; height: 150px; }
+}
